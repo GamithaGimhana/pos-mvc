@@ -19,6 +19,8 @@ import pos.mvc.model.CustomerModel;
  */
 public class CustomerView extends javax.swing.JFrame {
 
+    private CustomerController customerController;
+
     /**
      * Creates new form CustomerView
      */
@@ -485,5 +487,4 @@ public class CustomerView extends javax.swing.JFrame {
         }
 
     }
-}
 }
