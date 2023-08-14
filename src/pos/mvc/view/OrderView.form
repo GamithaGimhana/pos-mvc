@@ -133,7 +133,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="searchCustomerButton" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="cutDataLabel" pref="279" max="32767" attributes="0"/>
+                              <Component id="custDataLabel" pref="279" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -178,7 +178,7 @@
                           <Component id="customerLabel" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="customerIdText" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="searchCustomerButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cutDataLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="custDataLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jSeparator2" min="-2" pref="14" max="-2" attributes="0"/>
@@ -187,7 +187,7 @@
                           <Component id="itemLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="itemIdText" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="searchItemButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="itemDataLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="itemDataLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -293,7 +293,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addItemButton1ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="cutDataLabel">
+            <Component class="javax.swing.JLabel" name="custDataLabel">
             </Component>
             <Component class="javax.swing.JLabel" name="itemDataLabel">
             </Component>

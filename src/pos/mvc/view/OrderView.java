@@ -71,7 +71,7 @@ public class OrderView extends javax.swing.JFrame {
         discountText = new javax.swing.JTextField();
         searchItemButton = new javax.swing.JButton();
         addItemButton1 = new javax.swing.JButton();
-        cutDataLabel = new javax.swing.JLabel();
+        custDataLabel = new javax.swing.JLabel();
         itemDataLabel = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -159,7 +159,7 @@ public class OrderView extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(searchCustomerButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(cutDataLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE))
+                        .addComponent(custDataLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(discountLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
@@ -193,7 +193,7 @@ public class OrderView extends javax.swing.JFrame {
                     .addComponent(customerLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(customerIdText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(searchCustomerButton)
-                    .addComponent(cutDataLabel))
+                    .addComponent(custDataLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -201,7 +201,7 @@ public class OrderView extends javax.swing.JFrame {
                     .addComponent(itemLabel)
                     .addComponent(itemIdText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(searchItemButton)
-                    .addComponent(itemDataLabel))
+                    .addComponent(itemDataLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qtyLabel)
@@ -359,9 +359,9 @@ public class OrderView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addItemButton1;
+    private javax.swing.JLabel custDataLabel;
     private javax.swing.JTextField customerIdText;
     private javax.swing.JLabel customerLabel;
-    private javax.swing.JLabel cutDataLabel;
     private javax.swing.JLabel discountLabel;
     private javax.swing.JTextField discountText;
     private javax.swing.JLabel itemDataLabel;
@@ -389,7 +389,7 @@ public class OrderView extends javax.swing.JFrame {
             String custId = customerIdText.getText();
             CustomerModel cust = customerController.getCustomer(custId);
             if (cust != null) {
-                cutDataLabel.setText(cust.getName() + ", " + cust.getAddress());
+                custDataLabel.setText(cust.getName() + ", " + cust.getAddress());
             } else {
                 JOptionPane.showMessageDialog(this, "Customer Not Found");
             }
